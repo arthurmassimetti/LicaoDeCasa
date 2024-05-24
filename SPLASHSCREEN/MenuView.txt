@@ -1,0 +1,50 @@
+package com.myjavaapp.view;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MenuView extends JFrame {
+
+    private JButton buttonExit;
+
+    public MenuView() {
+        super("Menu");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+
+        JButton buttonOption1 = new JButton("Opção 1");
+        buttonOption1.addActionListener(new MenuButtonListener());
+        panel.add(buttonOption1);
+
+        JButton buttonOption2 = new JButton("Opção 2");
+        buttonOption2.addActionListener(new MenuButtonListener());
+        panel.add(buttonOption2);
+
+        buttonExit = new JButton("Sair");
+        buttonExit.addActionListener(new ExitButtonListener());
+        panel.add(buttonExit);
+
+        add(panel, BorderLayout.CENTER);
+
+        setSize(300, 150);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
+
+    private class MenuButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // Implementar lógica para cada opção do menu
+        }
+    }
+
+    private class ExitButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.exit(0);
+        }
+    }
+}

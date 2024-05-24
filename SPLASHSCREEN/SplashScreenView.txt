@@ -1,0 +1,38 @@
+package com.myjavaapp.view;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class SplashScreenView extends JFrame {
+
+    private JLabel label;
+
+    public SplashScreenView() {
+        super("My Java App");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
+
+        label = new JLabel("Carregando...", JLabel.CENTER);
+        label.setFont(new Font("Arial", Font.BOLD, 24));
+        label.setForeground(Color.WHITE);
+        add(label, BorderLayout.CENTER);
+
+        setSize(400, 200);
+        setLocationRelativeTo(null);
+        setVisible(true);
+
+        try {
+            Thread.sleep(3000); // 3 segundos
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        dispose();
+        new LoginView();
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(SplashScreenView::new);
+    }
+}

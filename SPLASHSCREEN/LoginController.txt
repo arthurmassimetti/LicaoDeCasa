@@ -1,0 +1,10 @@
+package com.myjavaapp.controller;
+
+public class LoginController {
+
+    public static boolean authenticate(String username, String password) {
+        // Implementar lógica de autenticação
+        // Por exemplo:
+        return username.equals("admin") && password.equals("password");
+    }
+}
