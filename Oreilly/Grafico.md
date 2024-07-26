@@ -1,3 +1,4 @@
+```python
 import matplotlib.pyplot as plt
 
 # Inicialização das listas para armazenar as informações
@@ -28,5 +29,5 @@ plt.title('Vendas por Unidade')
 plt.xticks(rotation=45)  # Rotaciona os rótulos do eixo X para melhor visualização
 plt.tight_layout()  # Ajusta o layout para evitar sobreposição
 plt.show()
-
+```
 ![image](https://github.com/user-attachments/assets/ec32d61e-9749-4c2f-9c8b-c026072b6feb)
