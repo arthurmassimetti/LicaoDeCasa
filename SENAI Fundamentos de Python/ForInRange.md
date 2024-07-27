@@ -1,3 +1,4 @@
+```Python
 quantidade_pessoas = int(input("Digite a quantidade de pessoas no quarto (1-4): "))
 
 quarto = []
@@ -44,3 +45,4 @@ for i, produto in enumerate(produtos):
         crescimento = (venda2020 / venda2019 - 1) * 100
         print(f"{produto}: Venda 2019 = {venda2019}, Venda 2020 = {venda2020}, Crescimento = {crescimento:.2f}%")
 
+```
