@@ -1,3 +1,4 @@
+```Python
 vendas = []
 
 while True:
@@ -22,3 +23,4 @@ while i < len(vendas):
     if vendas[i] >= meta:
         print(f"{vendedores[i]} - Vendas: {vendas[i]}")
     i += 1
+```
