@@ -1,3 +1,4 @@
+```Python
 # Meses e vendas
 meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 vendas_1sem = [25000, 29000, 22200, 17750, 15870, 19900]
@@ -35,4 +36,4 @@ print(f"O melhor mês representou {percentual_melhor_mes:.2f}% do faturamento to
 print("-" *50)
 print(f"Top 3 valores de vendas do ano: {vendas_top3}")
 print("-" *50)
-p
+```
