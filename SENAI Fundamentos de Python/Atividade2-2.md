@@ -1,3 +1,4 @@
+```Python
 # Definição dos estoques mínimos por categoria
 estoque_minimo = {
     "alimentos": 50,
@@ -27,3 +28,4 @@ if nome_produto and categoria_produto and quantidade_produto:
         print("Por favor, insira um número válido para a quantidade.")
 else:
     print("Por favor, preencha todas as informações corretamente.")
+```
