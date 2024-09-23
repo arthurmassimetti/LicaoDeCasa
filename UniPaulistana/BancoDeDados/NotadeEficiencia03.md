@@ -98,6 +98,4 @@ SELECT * FROM Usuarios;
 ## Considerações Finais
 Este projeto proporciona um ponto de partida para a gestão de bibliotecas utilizando um banco de dados relacional. A estrutura criada permite armazenar informações de forma organizada, com a possibilidade de futuras expansões, como o controle de empréstimos de livros e a inclusão de novas funcionalidades.
 
-## Autor
-- Nome do Estudante
-- [Seu GitHub](https://github.com/seu-perfil)
+
