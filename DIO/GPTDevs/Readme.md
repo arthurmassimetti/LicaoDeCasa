@@ -6,7 +6,7 @@ Este repositório contém os prompts e imagens utilizados na criação do artigo
 
 ## Conteúdo do Repositório
 
-- **Prompts Utilizados**: [prompts.md]([prompts.md](https://github.com/arthurmassimetti/LicaoDeCasa/blob/main/DIO/GPTDevs/Prompts.md))
+- **Prompts Utilizados**: [prompts.md](https://github.com/arthurmassimetti/LicaoDeCasa/blob/main/DIO/GPTDevs/Prompts.md)
 - **Imagens**: Pasta `images` contendo todas as imagens utilizadas no artigo.
 
 ## Sobre o Projeto
