@@ -20,8 +20,10 @@ CREATE TABLE Produto (
     descricao VARCHAR(50)
 );
 
-´´´
+```
 ### 2. Alterações nas tabelas:
+
+
 
 ```bash
 
@@ -37,7 +39,7 @@ ALTER TABLE Produto ADD COLUMN precoCompra DECIMAL(10, 2);
 -- Alterar o tipo de dado do campo descrição para varchar(25) na tabela Produto
 ALTER TABLE Produto MODIFY descricao VARCHAR(25);
 
-´´´
+```
 
 ### 3. Criação da base de dados "Carro" e tabelas:
 
