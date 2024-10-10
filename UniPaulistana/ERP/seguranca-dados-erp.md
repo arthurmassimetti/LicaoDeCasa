@@ -1,4 +1,5 @@
-# Desafios e Estratégias de Segurança de Dados em Sistemas ERP
+![image](https://github.com/user-attachments/assets/d92b0ca5-18cf-4210-b363-5a95658105c5)![image](https://github.com/user-attachments/assets/d98eda8f-9a1f-4c58-a147-2b5ec0d5d84c)# Desafios e Estratégias de Segurança de Dados em Sistemas ERP
+![image](https://github.com/user-attachments/assets/22295adf-fd9b-42a2-a449-e41e885e7414)
 
 ## 1. Quais são os desafios da segurança de dados em sistemas ERP: ataques cibernéticos e proteção de dados?
 
@@ -8,6 +9,9 @@ Os sistemas de Planejamento de Recursos Empresariais (ERP) são vitais para a op
 - **Proteção de Dados**: Garantir que os dados armazenados nos ERPs estejam seguros e em conformidade com as regulamentações, como a Lei Geral de Proteção de Dados (LGPD) no Brasil, é crucial. Isso inclui proteger informações pessoais, dados financeiros e segredos comerciais.
 
 ## 2. Qual a relação dos ERPs e proteção de dados?
+
+![image](https://github.com/user-attachments/assets/05e8d8b0-d3f1-4346-bc5e-f6781a456e08)
+
 
 Os ERPs centralizam o armazenamento e a gestão de dados, tornando-se um alvo atrativo para ataques cibernéticos. Portanto, a proteção de dados em um ERP é fundamental para evitar a perda ou o vazamento de informações críticas. A segurança de dados nos ERPs envolve a implementação de controles de acesso, criptografia e auditorias regulares para detectar e mitigar possíveis vulnerabilidades.
 
@@ -31,12 +35,4 @@ As estratégias para proteger os dados em sistemas ERP envolvem várias camadas 
 4. **Atualizações e Patches**: Manter o sistema ERP atualizado com os patches de segurança mais recentes para mitigar vulnerabilidades conhecidas.
 5. **Treinamento de Funcionários**: Capacitar os funcionários para reconhecer ameaças e práticas seguras, reduzindo o risco de ataques de engenharia social.
 
-## Imagem Relacionada
 
-![LGPD e Segurança de Dados](https://example.com/lgpd-seguranca.png)
-
-A imagem acima ilustra os principais aspectos da proteção de dados e da LGPD em sistemas corporativos.
-
----
-
-> *Este documento foi criado como parte de um projeto acadêmico para a disciplina de segurança de dados em sistemas ERP.*
