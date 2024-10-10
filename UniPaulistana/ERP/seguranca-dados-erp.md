@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d92b0ca5-18cf-4210-b363-5a95658105c5)![image](https://github.com/user-attachments/assets/d98eda8f-9a1f-4c58-a147-2b5ec0d5d84c)# Desafios e Estratégias de Segurança de Dados em Sistemas ERP
+# Desafios e Estratégias de Segurança de Dados em Sistemas ERP
 ![image](https://github.com/user-attachments/assets/22295adf-fd9b-42a2-a449-e41e885e7414)
 
 ## 1. Quais são os desafios da segurança de dados em sistemas ERP: ataques cibernéticos e proteção de dados?
