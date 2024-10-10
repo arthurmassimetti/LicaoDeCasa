@@ -1,3 +1,38 @@
+# Estudos de Caso: Implementações e Desafios em Sistemas ERP
+
+## 1. Por que as implementações de ERP acabam falhando?
+
+Com base nos estudos de caso analisados, algumas razões para falhas em implementações de ERP são:
+
+### Discover Financial Services
+A implementação de ERP na Discover foi bem-sucedida, mas os desafios apontam para potenciais causas de falhas em outras situações, tais como:
+
+- **Complexidade na personalização**: Sistemas ERP altamente personalizados podem se tornar difíceis de gerenciar, o que impacta a atualização e a escalabilidade.
+- **Mudança cultural**: A falta de aceitação por parte dos funcionários para adaptar-se a novos processos pode comprometer o projeto. A transição para novas tecnologias requer treinamento e envolvimento contínuo da equipe.
+
+### Hormel Foods
+Os problemas enfrentados pela Hormel mostram algumas causas de falha comuns:
+
+- **Falta de integração entre sistemas legados**: A coexistência de múltiplos sistemas que não se comunicam pode dificultar a consolidação de dados e a padronização dos processos.
+- **Subutilização do potencial do ERP**: Personalizações excessivas para atender às necessidades específicas de cada unidade de negócios podem gerar uma sobrecarga na manutenção e impedir o uso completo das funcionalidades padrão.
+
+### Taylor Corporation
+Os desafios de implementação na Taylor destacam os seguintes pontos de falha:
+
+- **Resistência à mudança**: A falta de engajamento inicial por parte dos funcionários pode levar a uma implementação mal-sucedida. É necessário promover uma gestão da mudança eficaz para garantir o sucesso.
+- **Dados fragmentados**: A consolidação de dados de diversos sistemas é uma tarefa complexa. Se não for feita de maneira adequada, pode comprometer a confiabilidade das informações.
+
+## 2. Solução proposta para os desafios do Monitor ERP
+
+Diante dos desafios relatados pela Monitor ERP, algumas soluções podem ser aplicadas utilizando sistemas ERP para garantir a segurança e a eficiência do suporte remoto:
+
+- **Autenticação Multifatorial**: Implementar um sistema de autenticação robusto, como o multifatorial, para garantir que somente usuários autorizados acessem os sistemas. Isso evitaria acessos indevidos e garantiria maior controle sobre os ambientes de suporte.
+- **Registro de Atividades e Auditoria**: Utilizar o ERP para registrar todas as atividades de suporte e acessos remotos. A auditoria periódica dos logs pode ajudar a identificar e mitigar possíveis vulnerabilidades.
+- **Personalização do Ambiente**: Configurar o ERP para atender às necessidades específicas de cada cliente, fornecendo suporte remoto mais eficiente e seguro sem incorrer em custos adicionais.
+- **Treinamento Contínuo da Equipe**: Capacitar os funcionários para lidar com as novas ferramentas e protocolos de segurança, minimizando o risco de erros humanos que possam comprometer a segurança.
+
+---
+
 # Desafios e Estratégias de Segurança de Dados em Sistemas ERP
 ![image](https://github.com/user-attachments/assets/22295adf-fd9b-42a2-a449-e41e885e7414)
 
