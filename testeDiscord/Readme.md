@@ -2,6 +2,13 @@
 ---
 *veja abaixo*
 
+```Python
+print("hello world")
+
+if print == "hello world":
+print("ketchup gay")
+```
+
 ```JavaScript
        try {
             const [findMaxProcessId] = await app.utils.funcoes.maxProcessId(multorg, empId, tipObjIntegr, sequencia)
