@@ -107,6 +107,17 @@ docker-compose up -d [nome-do-serviço]
 
 > ✅ Isso irá subir a nova versão no modo **detached (-d)**.
 
+### 🔄 Reiniciar manualmente o container (se necessário)
+
+Se for preciso **reiniciar o container manualmente** após a atualização ou algum ajuste, utilize:
+
+```bash
+docker restart [nome-do-container]
+```
+
+> 🛠️ **Exemplo de uso:**  
+> Reinicie apenas uma parte específica do conector sem afetar o restante do ambiente.
+
 ---
 
 ## ⚠️ Observações finais
