@@ -11,7 +11,7 @@ POST /auth/login
 ```
 
 <details>
-  <summary>/auth/login</summary>
+  <summary><strong>POST /auth/login</strong> - Autenticar e obter token</summary>
   <img width="1140" height="847" alt="image" src="https://github.com/user-attachments/assets/e08a9554-e8ca-4ce2-9837-9cca5d7cd243" />
 
 </details>
