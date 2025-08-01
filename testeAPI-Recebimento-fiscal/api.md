@@ -100,17 +100,3 @@ graph TD
     F -->|Erro| H[Aborta envio]
 ```
 
-## Boas práticas
-
-* Use HTTPS para todas as requisições.
-* Nunca exponha o token em logs ou front-end.
-* Armazene o tempo de expiração com precisão (`Date.now() + expires_in * 1000`).
-* Evite renovar o token se não houver atividade recente no sistema.
-
-## Contribuição
-
-Sinta-se à vontade para abrir *issues* ou *pull requests* se quiser melhorar esse fluxo ou adicionar novas funcionalidades.
-
-## Autor
-
-Desenvolvido por [Arthur Massimetti](https://github.com/arthurmassimetti)
