@@ -1,14 +1,5 @@
 # Integração com API Autenticada por Token
 
-## Visão Geral
-
-Este projeto implementa um fluxo de integração com uma API que utiliza autenticação via token Bearer. O processo inclui:
-
-* Obtenção inicial do token via login com usuário;
-* Armazenamento do token com controle de expiração;
-* Renovação do token automática com base no tempo restante;
-* Envio de arquivos com validação de token;
-* Prevenção de envio em caso de falha na autenticação.
 
 ## Autenticação
 
