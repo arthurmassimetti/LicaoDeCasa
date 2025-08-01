@@ -6,10 +6,6 @@
 
 A primeira etapa é realizar um `POST` com os dados do usuário (login e senha) na API de autenticação:
 
-```http
-POST /auth/login
-```
-
 <details>
   <summary><strong>POST /auth/login</strong> - Autenticar e obter token</summary>
   <img width="1140" height="847" alt="image" src="https://github.com/user-attachments/assets/e08a9554-e8ca-4ce2-9837-9cca5d7cd243" />
@@ -58,9 +54,11 @@ Após obter o token, ele deve ser armazenado junto com o tempo de expiração (r
 
 O sistema deve verificar periodicamente se o token está prestes a expirar. Quando restarem poucos minutos, chame:
 
-```http
-GET /auth/tokenRefresh
-```
+<details>
+  <summary><strong>GET /auth/tokenRefresh - Autenticar e renovar token</summary>
+   <img width="1420" height="653" alt="image" src="https://github.com/user-attachments/assets/4136346d-6129-4e0b-8902-827a36c90c38" />
+
+</details>
 
 **Resposta esperada:**
 
@@ -77,9 +75,11 @@ GET /auth/tokenRefresh
 
 Caso deseje validar se o token atual ainda está ativo e corresponde ao `multOrgId`, utilize:
 
-```http
-GET /auth/tokenValidate/{multOrgId}
-```
+<details>
+  <summary><strong>GET /auth/tokenValidate/{multOrgId} - validador de token</summary>
+  <img width="1417" height="756" alt="image" src="https://github.com/user-attachments/assets/789bfb2d-4151-4aa8-a9fb-aa85f9333bb3" />
+
+</details>
 
 **Resposta esperada:**
 
