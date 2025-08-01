@@ -1,6 +1,5 @@
 # Integração com API Autenticada por Token
 
-
 ## Autenticação
 
 ### 1. Login e Geração de Token
@@ -11,12 +10,18 @@ A primeira etapa é realizar um `POST` com os dados do usuário (login e senha) 
 POST /auth/login
 ```
 
+<details>
+  <summary>/auth/login</summary>
+  <img width="1140" height="847" alt="image" src="https://github.com/user-attachments/assets/e08a9554-e8ca-4ce2-9837-9cca5d7cd243" />
+
+</details>
+
 **Request Body (exemplo):**
 
 ```json
 {
-  "username": "seu_usuario",
-  "password": "sua_senha"
+  "username": "admin",
+  "password": "Admin@123"
 }
 ```
 
@@ -24,45 +29,82 @@ POST /auth/login
 
 ```json
 {
-  "access_token": "abc.def.ghi",
-  "expires_in": 3600
+  "_id": "...",
+  "fullName": "Administrador do Sistema",
+  "username": "admin",
+  "token": "eyJ..."
+}
+```
+
+* O token é válido por 1 hora.
+* Em caso de erro (usuário e/ou senha inválidos), o retorno será:
+
+```json
+{
+  "error": {
+    "code": "00007",
+    "message": "Usuário e/ou senha inválido(s)."
+  }
 }
 ```
 
 ### 2. Armazenamento do Token
 
-Após obter o token, ele é armazenado em memória ou banco (dependendo do seu backend) junto com o tempo de expiração.
+Após obter o token, ele deve ser armazenado junto com o tempo de expiração (recomenda-se registrar `Date.now() + 3600000`).
 
 ## Renovação Automática do Token
 
 ### 3. Verificação de Expiração
 
-O sistema utiliza um agendador (como `node-cron`) para verificar periodicamente (ex: a cada 30 minutos) se o token está prestes a expirar.
-
-Quando restarem poucos minutos para a expiração, um novo token é gerado via:
+O sistema deve verificar periodicamente se o token está prestes a expirar. Quando restarem poucos minutos, chame:
 
 ```http
 GET /auth/tokenRefresh
 ```
 
-O token só será renovado se ainda houver uso ativo da API. Caso contrário, a renovação é ignorada.
+**Resposta esperada:**
+
+```json
+{
+  "newToken": "eyJ..."
+}
+```
+
+* Esse novo token também é válido por 1 hora.
+* Se o token atual estiver inválido, o retorno será `401 Unauthorized`.
+
+## Validação de Token Ativo (Opcional)
+
+Caso deseje validar se o token atual ainda está ativo e corresponde ao `multOrgId`, utilize:
+
+```http
+GET /auth/tokenValidate/{multOrgId}
+```
+
+**Resposta esperada:**
+
+```json
+{
+  "message": "O token foi validado e pertence ao MultOrg."
+}
+```
 
 ## Envio de Arquivos com Token
 
 ### 4. Requisição com Token (Bearer)
 
-Ao enviar um arquivo, o token é incluído no cabeçalho da requisição:
+O token deve ser utilizado como autenticação do tipo Bearer nas chamadas subsequentes, como no envio de arquivos:
 
 ```http
 POST /api/envio
-Authorization: Bearer abc.def.ghi
+Authorization: Bearer eyJ...
 Content-Type: multipart/form-data
 ```
 
 **Regras:**
 
-* Se o status da resposta for `200 OK`, a requisição prossegue com o restante do processo.
-* Se houver erro de autenticação (ex: `401`), o envio é cancelado e o erro é logado.
+* Se o status da resposta for `200 OK`, o processo continua normalmente.
+* Se houver erro de autenticação (`401`), a requisição deve ser cancelada e o erro logado.
 
 ## Cron e Agendamento
 
@@ -76,6 +118,12 @@ cron.schedule('*/30 * * * *', () => {
   // Se necessário, renovar com GET /auth/tokenRefresh
 });
 ```
+
+**Boas práticas:**
+
+* Evitar renovação caso não haja uso recente da aplicação.
+* Armazenar token e data de expiração com precisão.
+* Nunca expor tokens sensíveis em logs.
 
 ## Resumo do Fluxo
 
@@ -91,3 +139,6 @@ graph TD
     F -->|Erro| H[Aborta envio]
 ```
 
+## Autor
+
+Desenvolvido por Arthur Massimetti
