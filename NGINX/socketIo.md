@@ -37,3 +37,4 @@ module.exports = {
 ```
 
 Ver as rotas certas
+<img width="661" height="842" alt="image" src="https://github.com/user-attachments/assets/c46c599b-ce7f-4908-a703-a8a3f7ebd286" />
