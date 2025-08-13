@@ -1,13 +1,6 @@
----
-
-title: Versionamento
-sidebar\_position: 3
-description: Guia de versionamento por RM, fluxo HML → PRD (main) e exceções para urgências.
---------------------------------------------------------------------------------------------
-
 ## Visão Geral do Fluxo
 
-![Fluxo de Versionamento (Imagem 1)](/img/versionamento/fluxo.png)
+![Uploading image.png…]()
 
 ---
 
